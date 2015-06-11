@@ -35,7 +35,6 @@
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.verReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,30 +92,24 @@
             // registrarToolStripMenuItem1
             // 
             this.registrarToolStripMenuItem1.Name = "registrarToolStripMenuItem1";
-            this.registrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.registrarToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
             this.registrarToolStripMenuItem1.Text = "Registrar";
             this.registrarToolStripMenuItem1.Click += new System.EventHandler(this.registrarToolStripMenuItem1_Click);
             // 
             // verReporteToolStripMenuItem
             // 
             this.verReporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verProveedorToolStripMenuItem,
             this.verProductoToolStripMenuItem});
             this.verReporteToolStripMenuItem.Name = "verReporteToolStripMenuItem";
             this.verReporteToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.verReporteToolStripMenuItem.Text = "Reporte";
             // 
-            // verProveedorToolStripMenuItem
-            // 
-            this.verProveedorToolStripMenuItem.Name = "verProveedorToolStripMenuItem";
-            this.verProveedorToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.verProveedorToolStripMenuItem.Text = "Ver Proveedor";
-            // 
             // verProductoToolStripMenuItem
             // 
             this.verProductoToolStripMenuItem.Name = "verProductoToolStripMenuItem";
-            this.verProductoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.verProductoToolStripMenuItem.Text = "Ver Producto";
+            this.verProductoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.verProductoToolStripMenuItem.Text = "Seleccionar Producto";
+            this.verProductoToolStripMenuItem.Click += new System.EventHandler(this.verProductoToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -158,7 +151,6 @@
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem verReporteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verProveedorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;

@@ -69,6 +69,7 @@
             // txtbusprod
             // 
             this.txtbusprod.Location = new System.Drawing.Point(113, 37);
+            this.txtbusprod.MaxLength = 10;
             this.txtbusprod.Name = "txtbusprod";
             this.txtbusprod.Size = new System.Drawing.Size(290, 20);
             this.txtbusprod.TabIndex = 1;
@@ -172,6 +173,7 @@
             // txtempresa
             // 
             this.txtempresa.Location = new System.Drawing.Point(404, 54);
+            this.txtempresa.MaxLength = 100;
             this.txtempresa.Name = "txtempresa";
             this.txtempresa.Size = new System.Drawing.Size(270, 20);
             this.txtempresa.TabIndex = 9;
@@ -179,6 +181,7 @@
             // txtprecio
             // 
             this.txtprecio.Location = new System.Drawing.Point(404, 28);
+            this.txtprecio.MaxLength = 10;
             this.txtprecio.Name = "txtprecio";
             this.txtprecio.Size = new System.Drawing.Size(270, 20);
             this.txtprecio.TabIndex = 8;
@@ -186,6 +189,7 @@
             // txtcantidad
             // 
             this.txtcantidad.Location = new System.Drawing.Point(80, 55);
+            this.txtcantidad.MaxLength = 5;
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(234, 20);
             this.txtcantidad.TabIndex = 7;
@@ -193,6 +197,7 @@
             // txtnombre
             // 
             this.txtnombre.Location = new System.Drawing.Point(80, 28);
+            this.txtnombre.MaxLength = 100;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(234, 20);
             this.txtnombre.TabIndex = 6;

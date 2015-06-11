@@ -142,5 +142,10 @@ namespace ProyectoInventario
             txtcod_postal.Clear();
             txtnombre.Focus();
         }
+
+        private void Proveedor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

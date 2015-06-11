@@ -38,5 +38,12 @@ namespace ProyectoInventario
                 this.Close();
             }
         }
+
+        private void verProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VerProducto verprod = new VerProducto();
+            verprod.Show();
+            this.Hide();
+        }
     }
 }

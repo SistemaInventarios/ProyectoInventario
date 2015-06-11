@@ -139,6 +139,7 @@
             // txtcod_postal
             // 
             this.txtcod_postal.Location = new System.Drawing.Point(406, 71);
+            this.txtcod_postal.MaxLength = 10;
             this.txtcod_postal.Name = "txtcod_postal";
             this.txtcod_postal.Size = new System.Drawing.Size(270, 20);
             this.txtcod_postal.TabIndex = 11;
@@ -146,6 +147,7 @@
             // txtemail
             // 
             this.txtemail.Location = new System.Drawing.Point(406, 43);
+            this.txtemail.MaxLength = 100;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(270, 20);
             this.txtemail.TabIndex = 10;
@@ -163,6 +165,7 @@
             // txttelefono
             // 
             this.txttelefono.Location = new System.Drawing.Point(406, 16);
+            this.txttelefono.MaxLength = 6;
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(270, 20);
             this.txttelefono.TabIndex = 9;
@@ -183,6 +186,7 @@
             // txtdireccion
             // 
             this.txtdireccion.Location = new System.Drawing.Point(70, 59);
+            this.txtdireccion.MaxLength = 100;
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(234, 20);
             this.txtdireccion.TabIndex = 8;
@@ -190,6 +194,7 @@
             // txtnombre
             // 
             this.txtnombre.Location = new System.Drawing.Point(70, 28);
+            this.txtnombre.MaxLength = 100;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(234, 20);
             this.txtnombre.TabIndex = 7;
@@ -308,6 +313,7 @@
             this.Controls.Add(this.GroupBox1);
             this.Name = "Proveedor";
             this.Text = "Proveedor";
+            this.Load += new System.EventHandler(this.Proveedor_Load);
             this.GroupBox2.ResumeLayout(false);
             this.GroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVproveedor)).EndInit();
