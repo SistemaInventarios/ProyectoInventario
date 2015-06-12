@@ -292,6 +292,7 @@
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.GroupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Producto";
             this.Text = "Producto";
             ((System.ComponentModel.ISupportInitialize)(this.DGVproducto)).EndInit();

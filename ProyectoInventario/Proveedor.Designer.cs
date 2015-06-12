@@ -311,6 +311,7 @@
             this.Controls.Add(this.DGVproveedor);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.GroupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Proveedor";
             this.Text = "Proveedor";
             this.Load += new System.EventHandler(this.Proveedor_Load);

@@ -33,12 +33,12 @@
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnasignar = new System.Windows.Forms.Button();
             this.DGVverprod2 = new System.Windows.Forms.DataGridView();
-            this.btnexportar = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Empresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnexportar = new System.Windows.Forms.Button();
             this.btninicio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVverprod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVverprod2)).BeginInit();
@@ -90,16 +90,6 @@
             this.DGVverprod2.Size = new System.Drawing.Size(339, 292);
             this.DGVverprod2.TabIndex = 4;
             // 
-            // btnexportar
-            // 
-            this.btnexportar.Location = new System.Drawing.Point(650, 310);
-            this.btnexportar.Name = "btnexportar";
-            this.btnexportar.Size = new System.Drawing.Size(128, 40);
-            this.btnexportar.TabIndex = 5;
-            this.btnexportar.Text = "Exportar";
-            this.btnexportar.UseVisualStyleBackColor = true;
-            this.btnexportar.Click += new System.EventHandler(this.btnexportar_Click);
-            // 
             // Id
             // 
             this.Id.HeaderText = "Id";
@@ -130,6 +120,17 @@
             this.Empresa.Name = "Empresa";
             this.Empresa.ReadOnly = true;
             // 
+            // btnexportar
+            // 
+            this.btnexportar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexportar.BackgroundImage")));
+            this.btnexportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnexportar.Location = new System.Drawing.Point(723, 310);
+            this.btnexportar.Name = "btnexportar";
+            this.btnexportar.Size = new System.Drawing.Size(55, 52);
+            this.btnexportar.TabIndex = 5;
+            this.btnexportar.UseVisualStyleBackColor = true;
+            this.btnexportar.Click += new System.EventHandler(this.btnexportar_Click);
+            // 
             // btninicio
             // 
             this.btninicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninicio.BackgroundImage")));
@@ -145,12 +146,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(790, 360);
+            this.ClientSize = new System.Drawing.Size(794, 374);
             this.Controls.Add(this.btninicio);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.DGVverprod2);
             this.Controls.Add(this.btnasignar);
             this.Controls.Add(this.DGVverprod);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VerProducto";
             this.Text = "VerProducto";
             this.Load += new System.EventHandler(this.VerProducto_Load);

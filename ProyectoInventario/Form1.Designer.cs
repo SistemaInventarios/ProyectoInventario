@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,7 +93,7 @@
             // registrarToolStripMenuItem1
             // 
             this.registrarToolStripMenuItem1.Name = "registrarToolStripMenuItem1";
-            this.registrarToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.registrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.registrarToolStripMenuItem1.Text = "Registrar";
             this.registrarToolStripMenuItem1.Click += new System.EventHandler(this.registrarToolStripMenuItem1_Click);
             // 
@@ -132,6 +133,7 @@
             this.ClientSize = new System.Drawing.Size(647, 224);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Sistema Inventario";
