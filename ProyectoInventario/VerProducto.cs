@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
 
 namespace ProyectoInventario
 {
@@ -54,13 +55,13 @@ namespace ProyectoInventario
             //
             foreach (DataGridViewRow row in rowSelected)
             {
-                DGVverprod2.Rows.Add(new object[] {false,
+                DGVverprod2.Rows.Add(new object[] {
+                                            //row.Cells[0].Value,
                                             row.Cells[1].Value,
                                             row.Cells[2].Value,
                                             row.Cells[3].Value,
                                             row.Cells[4].Value,
                                             row.Cells[5].Value});
-
                 DGVverprod.Rows.Remove(row);
             }
             
@@ -68,7 +69,63 @@ namespace ProyectoInventario
 
         private void btndesignar_Click(object sender, EventArgs e)
         {
+            
 
+        }
+
+        private void btnexportar_Click(object sender, EventArgs e)
+        {
+            exportaraexcel(DGVverprod2);
+        }
+
+        public void exportaraexcel(DataGridView tabla)
+        {
+
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+
+            excel.Application.Workbooks.Add(true);
+
+            int IndiceColumna = 0;
+
+            foreach (DataGridViewColumn col in tabla.Columns) // Columnas
+            {
+
+                IndiceColumna++;
+
+                excel.Cells[1, IndiceColumna] = col.Name;
+
+            }
+
+            int IndeceFila = 0;
+
+            foreach (DataGridViewRow row in tabla.Rows) // Filas
+            {
+
+                IndeceFila++;
+
+                IndiceColumna = 0;
+
+                foreach (DataGridViewColumn col in tabla.Columns)
+                {
+
+                    IndiceColumna++;
+
+                    excel.Cells[IndeceFila + 1, IndiceColumna] = row.Cells[col.Name].Value;
+
+                }
+
+            }
+
+            excel.Visible = true;
+
+
+        }
+
+        private void btninicio_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
     }
 }
