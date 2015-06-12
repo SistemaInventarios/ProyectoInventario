@@ -57,7 +57,7 @@ namespace ProyectoInventario
             {
                 DGVverprod2.Rows.Add(new object[] {
                                             //row.Cells[0].Value,
-                                            row.Cells[1].Value,
+                                            //row.Cells[1].Value,
                                             row.Cells[2].Value,
                                             row.Cells[3].Value,
                                             row.Cells[4].Value,

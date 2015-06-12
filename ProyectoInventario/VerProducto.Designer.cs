@@ -33,7 +33,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnasignar = new System.Windows.Forms.Button();
             this.DGVverprod2 = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,7 +77,6 @@
             this.DGVverprod2.AllowUserToDeleteRows = false;
             this.DGVverprod2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVverprod2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
             this.Nombre,
             this.Cantidad,
             this.Precio,
@@ -89,12 +87,6 @@
             this.DGVverprod2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVverprod2.Size = new System.Drawing.Size(339, 292);
             this.DGVverprod2.TabIndex = 4;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
             // 
             // Nombre
             // 
@@ -169,11 +161,10 @@
         private System.Windows.Forms.DataGridView DGVverprod2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private System.Windows.Forms.Button btnexportar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        internal System.Windows.Forms.Button btninicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Empresa;
-        internal System.Windows.Forms.Button btninicio;
     }
 }
