@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Producto));
             this.Label8 = new System.Windows.Forms.Label();
             this.txtbusprod = new System.Windows.Forms.TextBox();
@@ -51,9 +52,11 @@
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DGVproducto)).BeginInit();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // Label8
@@ -193,6 +196,7 @@
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(234, 20);
             this.txtcantidad.TabIndex = 7;
+            this.txtcantidad.TextChanged += new System.EventHandler(this.txtcantidad_TextChanged);
             // 
             // txtnombre
             // 
@@ -274,6 +278,10 @@
             this.txtId.TabIndex = 11;
             this.txtId.Visible = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,6 +308,7 @@
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +338,6 @@
         internal System.Windows.Forms.GroupBox GroupBox1;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

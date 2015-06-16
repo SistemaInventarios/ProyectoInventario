@@ -35,6 +35,7 @@ namespace ProyectoInventario
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
+
             string nombre = txtnombre.Text;
             int cantidad = Convert.ToInt32(txtcantidad.Text);
             int precio = Convert.ToInt32(txtprecio.Text);
@@ -133,6 +134,11 @@ namespace ProyectoInventario
         }
 
         private void DGVproducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtcantidad_TextChanged(object sender, EventArgs e)
         {
 
         }
