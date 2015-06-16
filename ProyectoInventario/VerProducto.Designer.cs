@@ -53,7 +53,7 @@
             this.DGVverprod.Location = new System.Drawing.Point(12, 12);
             this.DGVverprod.Name = "DGVverprod";
             this.DGVverprod.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVverprod.Size = new System.Drawing.Size(351, 292);
+            this.DGVverprod.Size = new System.Drawing.Size(644, 132);
             this.DGVverprod.TabIndex = 0;
             // 
             // Column1
@@ -63,9 +63,9 @@
             // 
             // btnasignar
             // 
-            this.btnasignar.Location = new System.Drawing.Point(369, 115);
+            this.btnasignar.Location = new System.Drawing.Point(151, 150);
             this.btnasignar.Name = "btnasignar";
-            this.btnasignar.Size = new System.Drawing.Size(64, 41);
+            this.btnasignar.Size = new System.Drawing.Size(55, 52);
             this.btnasignar.TabIndex = 2;
             this.btnasignar.Text = ">";
             this.btnasignar.UseVisualStyleBackColor = true;
@@ -81,11 +81,11 @@
             this.Cantidad,
             this.Precio,
             this.Empresa});
-            this.DGVverprod2.Location = new System.Drawing.Point(439, 12);
+            this.DGVverprod2.Location = new System.Drawing.Point(212, 150);
             this.DGVverprod2.Name = "DGVverprod2";
             this.DGVverprod2.ReadOnly = true;
             this.DGVverprod2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVverprod2.Size = new System.Drawing.Size(339, 292);
+            this.DGVverprod2.Size = new System.Drawing.Size(444, 134);
             this.DGVverprod2.TabIndex = 4;
             // 
             // Nombre
@@ -116,7 +116,7 @@
             // 
             this.btnexportar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexportar.BackgroundImage")));
             this.btnexportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnexportar.Location = new System.Drawing.Point(723, 310);
+            this.btnexportar.Location = new System.Drawing.Point(151, 232);
             this.btnexportar.Name = "btnexportar";
             this.btnexportar.Size = new System.Drawing.Size(55, 52);
             this.btnexportar.TabIndex = 5;
@@ -126,9 +126,10 @@
             // btninicio
             // 
             this.btninicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btninicio.BackgroundImage")));
-            this.btninicio.Location = new System.Drawing.Point(369, 12);
+            this.btninicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btninicio.Location = new System.Drawing.Point(12, 232);
             this.btninicio.Name = "btninicio";
-            this.btninicio.Size = new System.Drawing.Size(64, 64);
+            this.btninicio.Size = new System.Drawing.Size(55, 52);
             this.btninicio.TabIndex = 28;
             this.btninicio.UseVisualStyleBackColor = true;
             this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
@@ -138,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(794, 374);
+            this.ClientSize = new System.Drawing.Size(668, 296);
             this.Controls.Add(this.btninicio);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.DGVverprod2);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ProyectoInventario
 {
@@ -44,6 +45,14 @@ namespace ProyectoInventario
             VerProducto verprod = new VerProducto();
             verprod.Show();
             this.Hide();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = "archivo.pdf";
+            proc.Start();
+            proc.Close();
         }
     }
 }
