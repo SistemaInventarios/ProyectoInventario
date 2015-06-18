@@ -36,18 +36,40 @@ namespace ProyectoInventario
         private void btnagregar_Click(object sender, EventArgs e)
         {
 
-            string nombre = txtnombre.Text;
-            int cantidad = Convert.ToInt32(txtcantidad.Text);
-            int precio = Convert.ToInt32(txtprecio.Text);
-            string empresa = txtempresa.Text;
-            
-            ges.AgregarProducto(nombre, cantidad, precio, empresa);
-            MessageBox.Show("Datos ingresados correctamente");
-            txtnombre.Clear();
-            txtcantidad.Clear();
-            txtprecio.Clear();
-            txtempresa.Clear();
-            txtnombre.Focus();
+                string nombre = txtnombre.Text;
+                int cantidad = Convert.ToInt32(txtcantidad.Text);
+                int precio = Convert.ToInt32(txtprecio.Text);
+                string empresa = txtempresa.Text;
+
+                object valor = nombreproducto;
+                //Ahora compárelo con el texto en la casilla de texto:
+                if (String.Compare(txtnombre.Text, valor.ToString()) == 0)
+                {
+                    MessageBox.Show("Ya Exise el Producto!");
+                    txtnombre.ReadOnly = false;
+                    txtcantidad.ReadOnly = false;
+                    txtprecio.ReadOnly = false;
+                    txtempresa.ReadOnly = false;
+                    txtnombre.Clear();
+                    txtcantidad.Clear();
+                    txtprecio.Clear();
+                    txtempresa.Clear();
+                    txtnombre.Focus();
+                }
+                else
+                {
+                    ges.AgregarProducto(nombre, cantidad, precio, empresa);
+                    MessageBox.Show("Datos ingresados correctamente");
+                    txtnombre.Clear();
+                    txtcantidad.Clear();
+                    txtprecio.Clear();
+                    txtempresa.Clear();
+                    txtnombre.Focus();
+                    txtnombre.ReadOnly = false;
+                    txtcantidad.ReadOnly = false;
+                    txtprecio.ReadOnly = false;
+                    txtempresa.ReadOnly = false;
+                }      
         }
 
         private void txtbusprod_TextChanged(object sender, EventArgs e)
@@ -102,6 +124,10 @@ namespace ProyectoInventario
             txtprecio.Clear();
             txtempresa.Clear();
             txtnombre.Focus();
+            txtnombre.ReadOnly = false;
+            txtcantidad.ReadOnly = false;
+            txtprecio.ReadOnly = false;
+            txtempresa.ReadOnly = false;
         }
 
         private void btneditar_Click(object sender, EventArgs e)
@@ -131,6 +157,10 @@ namespace ProyectoInventario
             txtprecio.Clear();
             txtempresa.Clear();
             txtnombre.Focus();
+            txtnombre.ReadOnly = false;
+            txtcantidad.ReadOnly = false;
+            txtprecio.ReadOnly = false;
+            txtempresa.ReadOnly = false;
         }
 
         private void DGVproducto_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -41,15 +41,41 @@ namespace ProyectoInventario
             string email = txtemail.Text;
             int cod_postal = Convert.ToInt32(txtcod_postal.Text);
             
-            ges.AgregarProveedor(nombre, direccion, telefono, email, cod_postal);
-            MessageBox.Show("Datos ingresados correctamente");
-            txtId.Clear();
-            txtnombre.Clear();
-            txtdireccion.Clear();
-            txttelefono.Clear();
-            txtemail.Clear();
-            txtcod_postal.Clear();
-            txtnombre.Focus();
+            object valor = nombreproveedor;
+                //Ahora compárelo con el texto en la casilla de texto:
+                if (String.Compare(txtnombre.Text, valor.ToString()) == 0)
+                {
+                    MessageBox.Show("Ya Exise el Producto!");
+                    txtnombre.ReadOnly = false;
+                    txtdireccion.ReadOnly = false;
+                    txttelefono.ReadOnly = false;
+                    txtemail.ReadOnly = false;
+                    txtcod_postal.ReadOnly = false;
+                    txtId.Clear();
+                    txtnombre.Clear();
+                    txtdireccion.Clear();
+                    txttelefono.Clear();
+                    txtemail.Clear();
+                    txtcod_postal.Clear();
+                    txtnombre.Focus();
+                }
+                else
+                {
+                    ges.AgregarProveedor(nombre, direccion, telefono, email, cod_postal);
+                    MessageBox.Show("Datos ingresados correctamente");
+                    txtId.Clear();
+                    txtnombre.Clear();
+                    txtdireccion.Clear();
+                    txttelefono.Clear();
+                    txtemail.Clear();
+                    txtcod_postal.Clear();
+                    txtnombre.Focus();
+                    txtnombre.ReadOnly = false;
+                    txtdireccion.ReadOnly = false;
+                    txttelefono.ReadOnly = false;
+                    txtemail.ReadOnly = false;
+                    txtcod_postal.ReadOnly = false;
+                }
         }
 
         private void btneditar_Click(object sender, EventArgs e)
@@ -75,6 +101,11 @@ namespace ProyectoInventario
             txtemail.Clear();
             txtcod_postal.Clear();
             txtnombre.Focus();
+            txtnombre.ReadOnly = false;
+            txtdireccion.ReadOnly = false;
+            txttelefono.ReadOnly = false;
+            txtemail.ReadOnly = false;
+            txtcod_postal.ReadOnly = false;
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -141,6 +172,11 @@ namespace ProyectoInventario
             txtemail.Clear();
             txtcod_postal.Clear();
             txtnombre.Focus();
+            txtnombre.ReadOnly = false;
+            txtdireccion.ReadOnly = false;
+            txttelefono.ReadOnly = false;
+            txtemail.ReadOnly = false;
+            txtcod_postal.ReadOnly = false;
         }
 
         private void Proveedor_Load(object sender, EventArgs e)
