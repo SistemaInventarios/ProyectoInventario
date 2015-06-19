@@ -41,9 +41,9 @@ namespace ProyectoInventario
             string email = txtemail.Text;
             int cod_postal = Convert.ToInt32(txtcod_postal.Text);
             
-            object valor = nombreproveedor;
+            bool valor = ges.existe1(nombre);
                 //Ahora compárelo con el texto en la casilla de texto:
-                if (String.Compare(txtnombre.Text, valor.ToString()) == 0)
+                if (valor == true)
                 {
                     MessageBox.Show("Ya Exise el Producto!");
                     txtnombre.ReadOnly = false;
@@ -51,12 +51,11 @@ namespace ProyectoInventario
                     txttelefono.ReadOnly = false;
                     txtemail.ReadOnly = false;
                     txtcod_postal.ReadOnly = false;
-                    txtId.Clear();
                     txtnombre.Clear();
-                    txtdireccion.Clear();
-                    txttelefono.Clear();
-                    txtemail.Clear();
-                    txtcod_postal.Clear();
+                    //txtdireccion.Clear();
+                    //txttelefono.Clear();
+                    //txtemail.Clear();
+                    //txtcod_postal.Clear();
                     txtnombre.Focus();
                 }
                 else

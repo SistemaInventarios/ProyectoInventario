@@ -41,9 +41,9 @@ namespace ProyectoInventario
                 int precio = Convert.ToInt32(txtprecio.Text);
                 string empresa = txtempresa.Text;
 
-                object valor = nombreproducto;
+                bool valor = ges.existe(nombre);
                 //Ahora compárelo con el texto en la casilla de texto:
-                if (String.Compare(txtnombre.Text, valor.ToString()) == 0)
+                if (valor==true)
                 {
                     MessageBox.Show("Ya Exise el Producto!");
                     txtnombre.ReadOnly = false;
@@ -51,9 +51,9 @@ namespace ProyectoInventario
                     txtprecio.ReadOnly = false;
                     txtempresa.ReadOnly = false;
                     txtnombre.Clear();
-                    txtcantidad.Clear();
-                    txtprecio.Clear();
-                    txtempresa.Clear();
+                    //txtcantidad.Clear();
+                    //txtprecio.Clear();
+                    //txtempresa.Clear();
                     txtnombre.Focus();
                 }
                 else

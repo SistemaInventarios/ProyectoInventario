@@ -67,6 +67,23 @@ namespace ProyectoInventario
             return dt;
         }
 
+        public bool existe(string nombre)
+        {
+            int cant_filas = 0;
+            conn.conectar();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = new SqlCommand("SELECT Nombre FROM producto WHERE nombre = @Nombre", conn.conector);
+            da.SelectCommand.Parameters.Add(new SqlParameter("@Nombre", nombre));
+            // AddWithValue("@tags", "%" + tag + "%");
+
+
+            cant_filas = da.Fill(dt);
+
+            conn.desconectar();
+            return (cant_filas > 0);
+        }
+
         public DataTable mostrarProducto()
         {
 
@@ -151,6 +168,23 @@ namespace ProyectoInventario
             conn.desconectar();
             return dt;
 
+        }
+
+        public bool existe1(string nombre)
+        {
+            int cant_filas = 0;
+            conn.conectar();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = new SqlCommand("SELECT Nombre FROM proveedor WHERE nombre = @Nombre", conn.conector);
+            da.SelectCommand.Parameters.Add(new SqlParameter("@Nombre", nombre));
+            // AddWithValue("@tags", "%" + tag + "%");
+
+
+            cant_filas = da.Fill(dt);
+
+            conn.desconectar();
+            return (cant_filas > 0);
         }
 
     }
