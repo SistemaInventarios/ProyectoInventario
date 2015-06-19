@@ -39,6 +39,8 @@
             this.verProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verManualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.preguntasFrecuentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,6 +116,9 @@
             // 
             // ayudaToolStripMenuItem
             // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verManualDeUsuarioToolStripMenuItem,
+            this.preguntasFrecuentesToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
@@ -125,6 +130,19 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // verManualDeUsuarioToolStripMenuItem
+            // 
+            this.verManualDeUsuarioToolStripMenuItem.Name = "verManualDeUsuarioToolStripMenuItem";
+            this.verManualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.verManualDeUsuarioToolStripMenuItem.Text = "Ver Manual de Usuario";
+            this.verManualDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.verManualDeUsuarioToolStripMenuItem_Click);
+            // 
+            // preguntasFrecuentesToolStripMenuItem
+            // 
+            this.preguntasFrecuentesToolStripMenuItem.Name = "preguntasFrecuentesToolStripMenuItem";
+            this.preguntasFrecuentesToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.preguntasFrecuentesToolStripMenuItem.Text = "Preguntas Frecuentes";
             // 
             // Form1
             // 
@@ -157,6 +175,8 @@
         private System.Windows.Forms.ToolStripMenuItem verProductoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verManualDeUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem preguntasFrecuentesToolStripMenuItem;
     }
 }
 

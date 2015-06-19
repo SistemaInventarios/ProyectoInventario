@@ -49,6 +49,11 @@ namespace ProyectoInventario
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void verManualDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             System.Diagnostics.Process proc = new System.Diagnostics.Process();
             proc.StartInfo.FileName = "archivo.pdf";
             proc.Start();
